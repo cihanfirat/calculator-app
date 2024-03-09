@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center; /*horizontal alignment*/
+    align-items: center; /*vertical alignment*/
+    height: 100vh; /* we set the calculator on the middle of the screen*/
+    background-color: rgb(180, 180, 187);
+}
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px; /*to give border to calculator*/
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 80px;
+    text-align: left; /*numbers will display starting from left*/
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*4 columns in 1 row*/
+    gap: 10px;/*space between rows*/
+    padding: 25px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px; /*circle buttons*/
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 55%);
+}
+
+.operator-btn{
+    background-color: hsl(35, 100%, 55%);
+}
+
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 60%);
+}
+
+.operator-btn:active{
+    background-color: hsl(35, 100%, 65%);
+}
